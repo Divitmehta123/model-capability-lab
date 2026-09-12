@@ -1,0 +1,16 @@
+provider	model	scenario	capability	weight	outcome	latency_ms
+Hosted-A	general-v1	multi_step_tool_recovery	tool_calls	30	pass	620
+Hosted-A	general-v1	typed_result_contract	json_schema	20	pass	410
+Hosted-A	general-v1	image_to_component	vision	15	pass	880
+Hosted-A	general-v1	incremental_trace	streaming	15	pass	170
+Hosted-A	general-v1	repository_brief	long_context	20	pass	1320
+Hosted-B	reasoner-v2	multi_step_tool_recovery	tool_calls	30	pass	740
+Hosted-B	reasoner-v2	typed_result_contract	json_schema	20	pass	530
+Hosted-B	reasoner-v2	image_to_component	vision	15	unsupported	0
+Hosted-B	reasoner-v2	incremental_trace	streaming	15	pass	240
+Hosted-B	reasoner-v2	repository_brief	long_context	20	pass	1540
+Local	coder-14b	multi_step_tool_recovery	tool_calls	30	fail	1880
+Local	coder-14b	typed_result_contract	json_schema	20	pass	970
+Local	coder-14b	image_to_component	vision	15	unsupported	0
+Local	coder-14b	incremental_trace	streaming	15	pass	300
+Local	coder-14b	repository_brief	long_context	20	fail	4200
